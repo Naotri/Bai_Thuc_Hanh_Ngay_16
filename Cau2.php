@@ -6,30 +6,23 @@
 </head>
 <body>
 
-    <h2 align="center">BẢNG CỬU CHƯƠNG</h2>
-
-    <table border="1" align="center" cellpadding="5" cellspacing="0">
-        <thead>
-            <tr>
-                <?php
-                for ($i = 1; $i <= 10; $i++) {
-                    echo "<th>Bảng $i</th>";
-                }
-                ?>
-            </tr>
-        </thead>
-        <tbody>
+    <table border="1" align="center">
+        <tr>
             <?php
-           
-            for ($j = 1; $j <= 10; $j++) {
-                echo "<tr>";
-                for ($i = 1; $i <= 10; $i++) {
-                    echo "<td>$i x $j = " . ($i * $j) . "</td>";
-                }
-                echo "</tr>";
+            for ($i = 1; $i <= 10; $i++) {
+                echo "<th>Chương $i</th>";
             }
             ?>
-        </tbody>
+        </tr>
+        <?php
+        for ($j = 1; $j <= 10; $j++) {
+            echo "<tr>";
+            for ($i = 1; $i <= 10; $i++) {
+                echo "<td>$i x $j = " . ($i * $j) . "</td>";
+            }
+            echo "</tr>";
+        }
+        ?>
     </table>
 
 </body>
